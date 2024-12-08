@@ -14,6 +14,16 @@ export default {
       },
       fontFamily: {
         josefin: ['Josefin Sans', 'sans-serif'],
+        lato: ['Lato', 'sana-serif'],
+      },
+      screens:{
+        "max-sm": { 'max': '480px' },
+        "sm": "481px",
+        "md":  "640px",
+        "lg": "780px",
+        "xl": "892px",
+        "2xl": "1028px",
+        "3xl": "1248px"
       }
     },
   },

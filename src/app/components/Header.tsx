@@ -6,33 +6,45 @@ import { IoPerson } from "react-icons/io5";
 export default function Header() {
     return (
         <>
-        <header className="w-[1920px] h-11 bg-[#7E33E0]">
-            <div className="leading-4 flex text-[#fff]">
-                {/* left div */}
-                <div className="flex gap-10 text-center items-center ml-24 mt-2">
-                    <div className="flex gap-3">
-                        <div><FaRegEnvelope/></div>
-                        <div>
-                            <h4 className="w-[171px] h-4">mhhasanul@gmail.com</h4>
-                        </div>
+        <header className="bg-[#7E33E0] text-white w-full">
+            <div className="mx-auto flex items-center justify-between py-2 px-4 lg:px-20">
+                {/* Left Section */}
+                <div className="flex flex-wrap gap-6 font-josefin text-sm">
+                    <div className="flex items-center gap-2">
+                        <FaRegEnvelope/>
+                        <span>mhhasanul@gmail.com</span>
                     </div>
-                    <div className="flex gap-3">
-                    <div><FaPhoneVolume/></div>
-                    <div>
-                        <h4 className="w-[97px h-4">(12345)67890</h4>
-                    </div>
+                    <div className="flex items-center gap-2">
+                        <FaPhoneVolume/>
+                        <span>(12345) 67890</span>
                     </div>
                 </div>
-                {/* Right div */}
-                <div className="flex gap-10 ml-24 mt-2">
-                    <div className="flex w-[54px] h-4"><h4 className="flex gap-1">English <FaAngleDown/></h4></div>
-                    <div className="flex w-[43px] h-4"><h4 className="flex gap-1">USD <FaAngleDown/></h4></div>
-                    <div className="flex w-[32px] h-4"><h4 className="flex gap-1">Login <IoPerson /></h4></div>
-                    <div className="flex w-[58px] h-4"><h4 className="flex gap-1">Wishlist <FaRegHeart /></h4></div>
-                    <div className="flex w-[px] h-4"> <BsCart3/> </div>
+                {/* Right Section */}
+                <div className="flex gap-6 font-josefin">
+                    <div className="flex items-center gap-1 cursor-pointer">
+                        <span>English</span>
+                        <FaAngleDown/>
+                    </div>
+                    <div className="flex items-center gap-1 cursor-pointer">
+                        <span>USD</span>
+                        <FaAngleDown/>
+                    </div>
+                    <div className="flex items-center gap-1 cursor-pointer">
+                        <span>Login</span>
+                        <IoPerson/>
+                    </div>
+                    <div className="flex items-center gap-1 cursor-pointer">
+                        <span>Wishlist</span>
+                        <FaRegHeart/>
+                    </div>
+                    <div className="cursor-pointer">
+                        <BsCart3/>
+                    </div>
                 </div>
             </div>
         </header>
+
         </>
     )
 }
+
