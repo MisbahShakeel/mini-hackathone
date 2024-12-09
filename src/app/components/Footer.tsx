@@ -3,31 +3,31 @@ import { IoLogoTwitter } from "react-icons/io5";
 
 export default function Footer() {
     return (
-      <footer className="bg-gray-50 py-10 border-t border-grey-500">
-        <div className="container mx-auto px-4">
+      <footer className="w-full bg-gray-50 py-10 border-t border-grey-500">
+        <div className="container ml-24 px-4">
           {/* Footer Content */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {/* Column 1: Company Info */}
             <div>
               <h2 className="text-xl font-bold text-black">Hekto</h2>
-              <div className="flex mt-4 ">
+              <div className="w-[450px] flex mt-4 ">
                 <input
                   type="email"
                   placeholder="Enter Email Address"
-                  className="px-4 py-2 border border-gray-300 rounded-l-lg w-full text-sm"
+                  className="px-4 py-2 border border-gray-300 rounded-l-lg text-sm"
                 />
-                <button className="w-[100px]  bg-pink-500 text-white text-sm">
+                <button className="w-[120px]  bg-pink-500 text-white text-sm">
                   Sign Up
                 </button>
               </div>
               <p className="text-sm text-gray-500 mt-4">Contact Info</p>
-              <p className="text-sm text-gray-500">
+              <p className="w-[400px] text-sm text-gray-500">
                 17 Princess Road, London, Greater London NW1 8JR, UK
               </p>
             </div>
   
             {/* Column 2: Categories */}
-            <div className="mx-auto">
+            <div className="ml-28">
               <h3 className="text-lg font-bold text-black">Categories</h3>
               <ul className="mt-4 space-y-2">
                 <li className="text-sm text-gray-500">Laptops & Computers</li>
@@ -39,8 +39,8 @@ export default function Footer() {
             </div>
   
             {/* Column 3: Customer Care */}
-            <div>
-              <h3 className="text-lg font-bold text-black">Customer Care</h3>
+            <div className="ml-10">
+              <h3 className="text-lg font-bold text-black ">Customer Care</h3>
               <ul className="mt-4 space-y-2">
                 <li className="text-sm text-gray-500">My Account</li>
                 <li className="text-sm text-gray-500">Discount</li>
@@ -64,8 +64,8 @@ export default function Footer() {
           </div>
   
           {/* Footer Bottom */}
-          <div className="border-t border-grey-500 mt-10 pt-4 flex justify-between items-center">
-            <p className="text-sm text-gray-500">©Webecy - All Rights Reserved</p>
+          <div className="border-t border-grey-500 mt-10 pt-4 flex justify-between items-center mr-56">
+            <p className="text-sm text-gray-500 ml-20">©Webecy - All Rights Reserved</p>
             <div className="flex space-x-2">
               <span className="w-6 h-6 bg-blue-900 rounded-full text-white"><FaFacebookF className="mt-1 ml-1"/></span>
               <span className="w-6 h-6 bg-blue-900 rounded-full text-white"><FaInstagram className="mt-1 ml-1"/></span>

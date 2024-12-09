@@ -3,14 +3,14 @@ import { FaAngleDown, FaSearch } from "react-icons/fa";
 
 export default function Navbar() {
     return (
-        <nav className="bg-white mt-5">
-            <div className="max-w-[1030px] h-[40px] mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
-                <div className="flex justify-between w-full items-center">
+        <nav className="bg-white mt-4 fixed w-full z-50">
+            <div className="w-full max-w-[1030px]  mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+                <div className="flex justify-between w-full items-center h-[60px]">
                     <div>
                         <h1 className="font-josefin font-bold text-2xl text-black">Hekto</h1>
                     </div>
                     <div>
-                        <ul className="hidden md:flex gap-8 font-lato text-black font-medium ">
+                        <ul className="flex gap-3 md:gap-6 font-lato text-black font-medium ">
                             <li className="text-pink-500 flex"><Link href="/" className="">Home </Link><span className="mt-[5px]"><FaAngleDown /></span>  </li>
                             <li><Link href="/shop-list" 
                             >Pages</Link></li>

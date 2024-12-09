@@ -6,11 +6,11 @@ import { IoPerson } from "react-icons/io5";
 export default function Header() {
     return (
         <>
-        <header className="bg-[#7E33E0] text-white w-full">
-            <div className="mx-auto flex items-center justify-between py-2 px-4 lg:px-20">
+        <header className="bg-[#7E33E0] text-white w-full fixed top-0 z-50 shadow-md">
+            <div className="mx-auto flex flex-wrap items-center justify-between py-2 px-4 lg:px-20">
                 {/* Left Section */}
                 <div className="flex flex-wrap gap-6 font-josefin text-sm">
-                    <div className="flex items-center gap-2">
+                    <div className="hidden sm:flex items-center gap-2">
                         <FaRegEnvelope/>
                         <span>mhhasanul@gmail.com</span>
                     </div>
@@ -20,7 +20,7 @@ export default function Header() {
                     </div>
                 </div>
                 {/* Right Section */}
-                <div className="flex gap-6 font-josefin">
+                <div className="flex gap-6 font-josefin items-center">
                     <div className="flex items-center gap-1 cursor-pointer">
                         <span>English</span>
                         <FaAngleDown/>
