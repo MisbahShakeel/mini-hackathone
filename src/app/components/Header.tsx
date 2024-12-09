@@ -37,7 +37,7 @@ export default function Header() {
                         <span>Wishlist</span>
                         <FaRegHeart/>
                     </div>
-                    <div className="flex w-[32px] h-4 cursor-pointer">
+                    <div className="flex w-4 h-4 cursor-pointer">
                         <BsCart3/>
                     </div>
                 </div>
