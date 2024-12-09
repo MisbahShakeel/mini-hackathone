@@ -21,23 +21,23 @@ export default function Header() {
                 </div>
                 {/* Right Section */}
                 <div className="flex gap-6 font-josefin items-center">
-                    <div className="flex items-center gap-1 cursor-pointer">
+                    <div className="flex w-[54px] h-4 items-center gap-1 cursor-pointer">
                         <span>English</span>
                         <FaAngleDown/>
                     </div>
-                    <div className="flex items-center gap-1 cursor-pointer">
+                    <div className="flex w-[43px] h-4 items-center gap-1 cursor-pointer">
                         <span>USD</span>
                         <FaAngleDown/>
                     </div>
-                    <div className="flex items-center gap-1 cursor-pointer">
+                    <div className="flex w-[32px] h-4 items-center gap-1 cursor-pointer">
                         <span>Login</span>
                         <IoPerson/>
                     </div>
-                    <div className="flex items-center gap-1 cursor-pointer">
+                    <div className="flex w-[58px] h-4 items-center gap-1 cursor-pointer">
                         <span>Wishlist</span>
                         <FaRegHeart/>
                     </div>
-                    <div className="cursor-pointer">
+                    <div className="flex h-4 cursor-pointer">
                         <BsCart3/>
                     </div>
                 </div>

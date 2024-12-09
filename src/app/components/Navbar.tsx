@@ -3,6 +3,7 @@ import { FaAngleDown, FaSearch } from "react-icons/fa";
 
 export default function Navbar() {
     return (
+        <>
         <nav className="bg-white mt-4 fixed w-full z-50">
             <div className="w-full max-w-[1030px]  mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
                 <div className="flex justify-between w-full items-center h-[60px]">
@@ -34,5 +35,6 @@ export default function Navbar() {
                 </div>
             </div>
         </nav>
+        </>
     )
 }
