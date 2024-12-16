@@ -3,8 +3,8 @@ import { IoLogoTwitter } from "react-icons/io5";
 
 export default function Footer() {
     return (
-      <footer className="w-full bg-gray-50 py-10 border-t border-grey-500">
-        <div className="container ml-24 px-4">
+      <footer className="w-full bg-[#EEEFFB] py-10 border-t border-grey-500">
+        <div className="container  lg:ml-24 px-4">
           {/* Footer Content */}
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
             {/* Column 1: Company Info */}
@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
   
             {/* Column 2: Categories */}
-            <div className="ml-28">
+            <div className="lg:ml-28">
               <h3 className="text-lg font-bold text-black">Categories</h3>
               <ul className="mt-4 space-y-2">
                 <li className="text-sm text-gray-500">Laptops & Computers</li>
@@ -39,7 +39,7 @@ export default function Footer() {
             </div>
   
             {/* Column 3: Customer Care */}
-            <div className="ml-10">
+            <div className="lg:ml-10">
               <h3 className="text-lg font-bold text-black ">Customer Care</h3>
               <ul className="mt-4 space-y-2">
                 <li className="text-sm text-gray-500">My Account</li>
@@ -64,9 +64,9 @@ export default function Footer() {
           </div>
   
           {/* Footer Bottom */}
-          <div className="border-t border-grey-500 mt-10 pt-4 flex justify-between items-center mr-56">
-            <p className="text-sm text-gray-500 ml-20">©Webecy - All Rights Reserved</p>
-            <div className="flex space-x-2">
+          <div className="bg-[#E7E4F8] w-[600px] lg:w-[1350px] border-t border-grey-500 mt-10 pt-4 flex justify-between items-center -ml-3 lg:-ml-32">
+            <p className="text-sm text-gray-500 lg:ml-20">©Webecy - All Rights Reserved</p>
+            <div className="flex space-x-2 mr-56">
               <span className="w-6 h-6 bg-blue-900 rounded-full text-white"><FaFacebookF className="mt-1 ml-1"/></span>
               <span className="w-6 h-6 bg-blue-900 rounded-full text-white"><FaInstagram className="mt-1 ml-1"/></span>
               <span className="w-6 h-6 bg-blue-900 rounded-full text-white"><IoLogoTwitter className="mt-1 ml-1"/></span>

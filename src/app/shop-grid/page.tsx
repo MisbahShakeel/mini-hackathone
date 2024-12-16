@@ -1,18 +1,19 @@
 import { FaCircle } from "react-icons/fa";
+import Images from "../components/Images";
 
 export default function Shop() {
     return (
-      <section className=" bg-white py-8">
+      <section className=" bg-white py-8 mt-4">
         <div className="container mx-auto px-4">
-          {/* Breadcrumb */}
-          <div className="h-[150px] mb-6 mt-10 ml-[120px]">
+          
+          <div className="h-[150px] mb-6 mt-20 ml-[120px]">
             <h2 className="text-2xl font-bold text-black font-josefin">Shop Grid Default</h2>
             <p className="flex mt-4 text-sm text-gray-500 font-lato text-center">
               Home <FaCircle className="text-pink-700 w-[5px] h-[5px] mt-2 ml-1 mr-1"/> Pages <FaCircle className="text-pink-700 w-[5px] h-[5px] mt-2 ml-1 mr-1"/> <span className="text-pink-700">Shop Grid Default</span>
             </p>
           </div>
   
-          {/* Filter Bar */}
+          
           <div className="flex flex-wrap items-center justify-between border-b pb-4 mb-6 ">
             <div className="mt-10 ml-[122px]">
             <h3 className="w-[398px] h-[22px] text-lg font-[700] text-black font-josefin">
@@ -216,6 +217,9 @@ export default function Shop() {
                 </div>
               </div>
           </div>
+        </div>
+        <div className="mt-20 mb-10">
+        <Images/>
         </div>
       </section>
     );
