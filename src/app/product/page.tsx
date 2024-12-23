@@ -117,7 +117,7 @@ export default function Shop() {
               <div>
               <Image src="/girl1.png" alt="" width={250} height={250}/>
               <div className="flex flex-row">
-                <h3 className="font-josefin text-[#151875] text-sm  pt-4">Women's Fashion</h3>
+                <h3 className="font-josefin text-[#151875] text-sm pt-4">Womens Fashion</h3>
                 <div className="flex pt-4 pl-10 gap-1">
                 <FaStar className="text-yellow-400 w-3 h-5"/>
                 <FaStar className="text-yellow-400 w-3 h-5"/>
