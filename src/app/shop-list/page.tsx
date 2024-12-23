@@ -3,19 +3,19 @@ import Image from "next/image"
 import Images from "../components/Images"
 export default function ShopPages () {
     return (
-        <section className=" bg-white py-24 mt-4">
-          <div className="container mx-auto px-4">
-
-           <div className="h-[150px] mb-6 ml-[120px]">
-            <h2 className="text-2xl font-bold text-black font-josefin">Shop Grid Default</h2>
+        <section className=" bg-white py-8 mt-4">
+          <div className="container">
+          <div className="bg-[#F6F5FF] w-[1330px]">
+           <div className="h-[250px] mb-6 mx-44 relative top-24">
+            <h2 className="text-2xl font-bold text-black font-josefin">Shop List</h2>
             <p className="flex mt-4 text-sm text-gray-500 font-lato text-center">
-              Home <FaCircle className="text-pink-700 w-[5px] h-[5px] mt-2 ml-1 mr-1"/> Pages <FaCircle className="text-pink-700 w-[5px] h-[5px] mt-2 ml-1 mr-1"/> <span className="text-pink-700">Shop Grid Default</span>
+              Home <FaCircle className="text-pink-700 w-[5px] h-[5px] mt-2 ml-1 mr-1"/> Pages <FaCircle className="text-pink-700 w-[5px] h-[5px] mt-2 ml-1 mr-1"/> <span className="text-pink-700">Shop List</span>
             </p>
           </div>
-          
+          </div>
           {/* Filter Bar */}
           <div className="flex flex-wrap items-center justify-between border-b pb-4 mb-6 ">
-            <div className="mt-10 ml-[120px]">
+            <div className="mt-10 mx-44">
             <h3 className="w-[398px] h-[22px] text-lg font-[700] text-black font-josefin">
               ECommerce Accessories & Fashion Items
             </h3>
@@ -48,7 +48,7 @@ export default function ShopPages () {
           {/* Shop List */}
           <div>
             <div>
-            <div className="grid gap-6 lg:gap-14 ml-[80px] lg:ml-[120px]">
+            <div className="grid gap-6 lg:gap-14 ml-[80px] lg:ml-[180px]">
                 <div className="flex flex-col lg:flex-row">
                     <div className="w-[200px] border bg-gray-50 mt-9 overflow-hidden">
                      <Image src="/list1.jpg" alt="" width={250} height={250} className="object-cover"/>
