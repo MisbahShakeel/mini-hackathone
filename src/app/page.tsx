@@ -173,6 +173,7 @@ export default function Home() {
         </div>
       </section>
       {/* Shopex Offers*/}
+      {/* Shopex Offers Section*/}
       <section className="text-center my-8 mx-24">
         <h2 className="text-2xl font-bold text-black mb-6">What Shopex Offer</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
