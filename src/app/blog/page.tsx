@@ -138,7 +138,7 @@ export default function Contact() {
                         <Image src="/clush.png" alt="" width={130} height={100} />
                         <p className="text-[#151875]">Elle omore in enim mauris.</p>
                       </div>
-                      <div className="w-[120px]">
+                      <div className="w-[110px]">
                         <Image src="/handBag.png" alt="" width={120} height={100} className="w-full overflow-hidden object-cover"/>
                         <p className="text-[#151875]">Elle omore in enim mauris.</p>
                       </div>
