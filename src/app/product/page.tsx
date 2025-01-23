@@ -1,10 +1,10 @@
 'use client'
 
-import { FaCircle, FaHeart, FaInstagram, FaFacebookF, FaArrowRight, FaStar } from "react-icons/fa";
+import { FaCircle, FaHeart, FaInstagram, FaFacebookF, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
 import { IoLogoTwitter } from "react-icons/io5";
 import Images from "../components/Images";
-import Link from "next/link";
+
 
 export default function Shop() {
 
