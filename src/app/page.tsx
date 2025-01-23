@@ -1,23 +1,23 @@
 import Image from "next/image";
-import Images from "./components/Images";
+import Images from "./components/Logo";
 
 export default function Home() {
   return (
-    <>
+    <div className="w-full mx-4 relative top-20">
       {/* Hero Section */}
       <section>
-        <div className="w-full h-[700px] bg-[#F2F0FF] flex sm:flex-col lg:flex-row mt-4 lg:px-0">
+        <div className="w-[1310px] h-[700px] bg-[#F2F0FF] flex sm:flex-col lg:flex-row  lg:px-0 overflow-hidden">
           {/* Left Side */}
           <div className="relative flex-shrink-0 ">
-            <div className="flex justify-center lg:justify-start mt-[75px] ">
-              <Image alt="" src="/light.png" width={200} height={200} className="lg:w-[387px] lg:h-[387px]" />
+            <div className="flex justify-center lg:justify-start  ">
+              <Image alt="" src="/light.png" width={200} height={200} className="lg:w-[300px] lg:h-[387px]" />
             </div>
-            <div className="relative top-10 left-[50%] lg:top-36 lg:left-[180px]">
+            <div className="relative top-10 left-[30%] lg:top-36 lg:left-[45%]">
               <Image src="/Ellipse 62.png" alt="" width={15} height={15} />
             </div>
           </div>
           {/* Middle Side */}
-          <div className="relative lg:top-52 lg:mx-4 text-center lg:text-left lg:-left-14">
+          <div className="relative lg:top-32 lg:mx-4 text-center lg:text-left lg:-left-14">
             <div className="font-lato font-[300] w-[170px] sm:w-[300px] lg:w-[644px] size-4 lg:leading-7">
               <h4 className="w-[230px] h-[28px] text-[#FB2E86]">Best Furniture For Your Castle....</h4>
               <h1 className="w-[500px] h-[78px] text-2xl lg:text-4xl font-josefin font-[700] text-black leadimg-{81.98px] mt-4">New Furniture Collection Trends in 2020</h1>
@@ -27,7 +27,7 @@ export default function Home() {
               <button className="w-[100px] lg:w-[163px] h-[50px] bg-[#FB2E86] border-[2px] font-josefin size-[17px] leading-[19.92px] text-white mt-[250px]">Shop Now</button>
             </div>
           </div>
-          <div className="flex absolute lg:top-[700px] lg:left-[660px]">
+          <div className="flex absolute lg:top-[650px] lg:left-[660px]">
             <div className="rotate-45">
               <Image src="/Rectangle 96.png" alt="" width={10} height={10} />
             </div>
@@ -39,19 +39,19 @@ export default function Home() {
             </div>
           </div>
           {/* Right Side */}
-          <div className="mr-20">
-            <div className="relative mt-32 flex-shrink-0 ">
-              <div className="relative lg:w-[450px] lg:h-[450px] right-56 top-10">
+          <div>
+            <div className="relative mt-20 ">
+              <div className="absolute lg:w-[450px] lg:h-[450px] -right-64 top-10">
                 <Image src="/sofa.png" alt="" width={450} height={450} />
               </div>
-              <div className="absolute top-3 lg:top-16 right-24">
+              <div className="absolute top-3 lg:top-16 -right-[300px]">
                 <h3 className="absolute font-josefin font-bold text-lg lg:text-2xl -top-10 mx-auto text-white ml-6">50% <br />off</h3>
                 <Image src="/Vector 14.png" alt="" width={100} height={100} className="mt-4 lg:-mt-16 lg:mr-32" />
               </div>
-              <div className="w-[766px] h-[569px] absolute -top-1 -right-28">
+              <div className="w-[766px] h-[569px] absolute top-4 -right-[580px]">
                 <Image src="/Ellipse 61.png" alt="" width={450} height={450} />
               </div>
-              <div className="w-[684px] h-[684px] absolute top-10 right-0">
+              <div className="w-[684px] h-[684px] absolute top-10 -right-[450px]">
                 <Image src="/Ellipse 61.png" alt="" width={450} height={450} />
               </div>
             </div>
@@ -70,28 +70,27 @@ export default function Home() {
               <Image src="/chair 1.png" alt="" width={200} height={200} className="mx-auto" />
               <h3 className="text-lg font-semibold mt-4">Product</h3>
               <p className="text-gray-500 text-sm mt-2">$120.00</p>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded mt-4">Add to card</button>
+        
             </div>
             <div className="border p-4 rounded-lg shadow hover:shadow-lg transition-all bg-white">
               <Image src="/chair 2.png" alt="" width={200} height={200} className="mx-auto" />
               <h3 className="text-lg font-semibold mt-4">Product</h3>
               <p className="text-gray-500 text-sm mt-2">$120.00</p>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded mt-4">Add to card</button>
+        
             </div>
             <div className="border p-4 rounded-lg shadow hover:shadow-lg transition-all bg-white">
               <Image src="/chair 3.png" alt="" width={200} height={200} className="mx-auto" />
               <h3 className="text-lg font-semibold mt-4">Product</h3>
               <p className="text-gray-500 text-sm mt-2">$120.00</p>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded mt-4">Add to card</button>
+        
             </div>
             <div className="border p-4 rounded-lg shadow hover:shadow-lg transition-all bg-white">
               <Image src="/chair 4.png" alt="" width={300} height={300} className="mx-auto" />
               <h3 className="text-lg font-semibold mt-8">Product</h3>
               <p className="text-gray-500 text-sm mt-2">$120.00</p>
-              <button className="bg-blue-500 text-white py-2 px-4 rounded mt-4">Add to card</button>
             </div>
           </div>
-          <div className="w-[100px] flex mt-[20px] lg:mt-[50px] ml-[250px] lg:ml-[600px] gap-2 bg-yellow-200 border border-yellow-500">
+          <div className="w-[100px] flex mt-[20px] lg:mt-[50px] ml-[250px] lg:ml-[525px] gap-2 bg-yellow-200 border border-yellow-500">
             <div><Image src="/Rectangle 1.png" alt="" width={24} height={4} /></div>
             <div><Image src="/Rectangle 2.png" alt="" width={16} height={4} /> </div>
             <div><Image src="/Rectangle 3.png" alt="" width={16} height={4} /> </div>
@@ -149,7 +148,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border p-4 rounded-lg shadow hover:shadow-lg transition-all bg-white" >
-            <Image src="/chair3.png" alt="" width={200} height={200} className="mx-auto" />
+            <Image src="/chair3.png" alt="" width={280} height={200} className="mx-auto" />
 
             <div className="flex mt-4">
               <p className="text-lg font-semibold mt-5 text-blue-800">Comfort Handy Craft</p>
@@ -160,7 +159,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border p-4 rounded-lg shadow hover:shadow-lg transition-all bg-white" >
-            <Image src="/chair 4.png" alt="" width={200} height={200} className="mx-auto" />
+            <Image src="/chair 4.png" alt="" width={310} height={200} className="mx-auto" />
             <div className="flex mt-4">
               <p className="text-lg font-semibold mt-5 text-blue-800">Comfort Handy Craft</p>
               <div className="flex relative left-10">
@@ -411,6 +410,7 @@ export default function Home() {
       <div className="mt-36 mb-20">
         <Images />
       </div>
-    </>
+    </div>
+    
   );
 }

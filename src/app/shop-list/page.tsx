@@ -1,9 +1,9 @@
 import { FaCircle } from "react-icons/fa"
 import Image from "next/image"
-import Images from "../components/Images"
+import Images from "../components/Logo"
 export default function ShopPages () {
     return (
-        <section className=" bg-white py-8 mt-4">
+        <section className=" bg-white py-8">
           <div className="container">
           <div className="bg-[#F6F5FF] w-[1330px]">
            <div className="h-[250px] mb-6 mx-44 relative top-24">

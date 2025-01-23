@@ -1,11 +1,30 @@
+'use client'
+
 import { FaCircle, FaHeart, FaInstagram, FaFacebookF, FaArrowRight, FaStar } from "react-icons/fa";
 import Image from "next/image";
 import { IoLogoTwitter } from "react-icons/io5";
-import Images from "../components/Images";
+import Images from "../components/Logo";
+import { useEffect, useState } from "react";
+import Product from "@/types/product";
+import { client } from "@/sanity/lib/client";
+import { allProducts, four } from "@/sanity/lib/quires";
+import { urlFor } from "@/sanity/lib/image";
+import Link from "next/link";
 
 export default function Shop() {
+
+const [product, setProduct] = useState<Product[]>([])
+
+useEffect(() => {
+  async function fetchProduct() {
+    const fetchedProduct : Product[] = await client.fetch(allProducts)
+    setProduct(fetchedProduct)
+  }
+  fetchProduct()
+},[])
+
   return (
-    <section className=" bg-white py-8 mt-4">
+    <section className=" bg-white py-8">
       <div className="container">
       <div className="bg-[#F6F5FF] w-[1330px]">
         <div className="h-[250px] mb-6 relative top-24 mx-44 px-4">
@@ -96,66 +115,30 @@ export default function Shop() {
           </div>
         </div>
         {/* Related Products */}
-        <div className="h-full lg:h-[550px]">
+        <div className="h-full">
           <div className=" mb-6 mt-20 lg:mx-44 px-2 lg:px-4">
             <h1 className="w-[293px] font-josefin size-[36px] leading-[42.19px] text-[#101750] font-bold text-lg">Related Products</h1>
             <div className="grid grid-col-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-7 mt-8 w-[1000px]">
-              <div>
-                <Image src="/boyImg.png" alt="" width={250} height={250}/>
-                <div className="flex flex-row">
-                <h3 className="font-josefin text-[#151875] text-sm  pt-4">Mens Fashion Wear</h3>
-                <div className="flex pt-4 pl-6 gap-1">
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-gray-400 w-3 h-5"/>
+              {product.map((product) => (
+                <div key={product._id}
+                className=" border p-4 rounded-lg shadow hover:shadow-lg transition-all bg-white">
+                 <Link href={`/components/product/${product.slug.current}`}>
+                  {product.image && (
+                    <Image
+                    src={urlFor(product.image).url()}
+                    alt="image"
+                    width={200}
+                    height={200}
+                    className="w-full h-48 object-cover"
+                    />
+                  )}
+                  <h2 className="text-blue-800 font-lato font-bold">{product.productName}</h2>
+                  <p className="text-gray-500 mt-2">
+                    {product.price ? `$${product.price}` : "Price not available"}
+                  </p>
+                  </Link>
                 </div>
-                </div>
-                <p className="font-sans text-[#151875] pt-2">$43.00</p>
-              </div>
-              <div>
-              <Image src="/girl1.png" alt="" width={250} height={250}/>
-              <div className="flex flex-row">
-                <h3 className="font-josefin text-[#151875] text-sm pt-4">Womens Fashion</h3>
-                <div className="flex pt-4 pl-10 gap-1">
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                </div>
-                </div>
-                <p className="font-sans text-[#151875] pt-2">$67.00</p>
-              </div>
-              <div>
-              <Image src="/girl2.png" alt="" width={250} height={250}/>
-              <div className="flex flex-row">
-                <h3 className="font-josefin text-[#151875] text-sm  pt-4 w-[250px]">Walx Dummy Fashion</h3>
-                <div className="flex pt-4 -ml-20 lg:ml-1 gap-1">
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-gray-400 w-3 h-5"/>
-                </div>
-                </div>
-                <p className="font-sans text-[#151875] pt-2">$67.00</p>
-              </div>
-              <div>
-              <Image src="/girl3.png" alt="" width={250} height={250}/>
-              <div className="flex flex-row">
-                <h3 className="font-josefin text-[#151875] text-sm  pt-4">Top Wall Digital Clock</h3>
-                <div className="flex pt-4 pl-4 gap-1">
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-yellow-400 w-3 h-5"/>
-                <FaStar className="text-gray-400 w-3 h-5"/>
-                <FaStar className="text-gray-400 w-3 h-5"/>
-                </div>
-                </div>
-                <p className="font-sans text-[#151875] pt-2">$51.00</p>
-              </div>
+              ))}
             </div>
           </div>
         </div>

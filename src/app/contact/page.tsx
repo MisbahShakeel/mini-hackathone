@@ -1,10 +1,10 @@
 import { FaCircle } from "react-icons/fa";
-import Images from "../components/Images";
+import Images from "../components/Logo";
 import Image from "next/image";
 
 export default function Contact() {
   return (
-    <section className=" py-8 mt-4">
+    <section className=" py-8">
       <div className="container">
        <div className="bg-[#F6F5FF] lg:w-[1330px]">
         <div className="relative top-24 h-[250px] mb-6 mx-16 lg:mx-44 px-4">

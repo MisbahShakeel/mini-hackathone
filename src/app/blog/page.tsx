@@ -1,13 +1,13 @@
 import { FaCircle } from "react-icons/fa";
 import Image from "next/image";
-import Images from "../components/Images";
+import Images from "../components/Logo";
 
 export default function Contact() {
   return (
-    <section className=" py-8 mt-4">
-      <div className="container mx-32">
+    <section className=" py-8">
+      <div className="container">
        <div className="bg-[#F6F5FF] lg:w-[1330px]">
-        <div className="relative top-24 h-[250px] mb-6 mx-4 px-4">
+       <div className="relative top-24 h-[250px] mb-6 mx-16 lg:mx-44 px-4">
           <h2 className="w-[200px] text-xl lg:text-2xl font-bold text-[#101750] font-josefin">Blog Page</h2>
           <p className="flex  flex-col md:flex-row lg:flex-row mt-4 text-sm text-gray-500 font-lato text-center gap-2">
             Home <FaCircle className="text-pink-700 w-[5px] h-[5px] lg:mt-2 ml-1 mr-1 hidden sm:flex" /><span>Pages</span><FaCircle className="text-pink-700 w-[5px] h-[5px] lg:mt-2  lg:ml-1 mr-1 hidden sm:flex" /> <span className="text-pink-700">Blog page</span>
@@ -15,7 +15,7 @@ export default function Contact() {
         </div>
         </div>
         {/* main content */}
-        <div className="flex flex-col md:flex-row">
+        <div className="flex flex-col md:flex-row mx-16 lg:mx-44">
             <div className="w-full md:w-[60%]">
                 <div className="bg-white rounded-lg overflow-hidden mb-8">
                     <Image src="/blog1.png" alt="" width={800} height={400} className="w-full"/>
@@ -75,8 +75,8 @@ export default function Contact() {
             </div>
             <div className="mb-8">
                 <h3 className="text-2xl font-semibold mb-4 text-[#151875]">Categories</h3>
-                <ul className="grid grid-cols-1 md:grid-cols-2 space-y-2 text-gray-700">
-                    <li className="px-4 py-2 w-32 text-white bg-pink-500 font-lato font-medium">Hobbies (14)</li>
+                <ul className="grid grid-cols-1 md:grid-cols-2 space-y-2 space-x-1 text-gray-700">
+                    <li className="px-4 py-2 w-28 text-white bg-pink-500 font-lato text-sm">Hobbies (14)</li>
                     <li>Women (21)</li>
                     <li>Women (21)</li>
                     <li>Women (21)</li>

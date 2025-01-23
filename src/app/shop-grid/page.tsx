@@ -1,9 +1,9 @@
 import { FaCircle } from "react-icons/fa";
-import Images from "../components/Images";
+import Images from "../components/Logo";
 
 export default function Shop() {
     return (
-      <section className=" bg-white py-8 mt-4">
+      <section className=" bg-white py-8">
         <div className="container">
         <div className="bg-[#F6F5FF] w-[1330px]">  
           <div className="h-[250px] mb-6 relative top-24 ml-[120px]">
