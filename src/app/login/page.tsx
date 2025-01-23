@@ -32,7 +32,7 @@ export default function LoginPage() {
                     <button className="w-full bg-pink-600 text-white py-2 rounded-md mt-4">
                         Sign In
                     </button>
-                    <p className="text-gray-400 text-sm text-center mt-4">Don't have an Account?Create account</p>
+                    <p className="text-gray-400 text-sm text-center mt-4">Do not have an Account?Create account</p>
                 </div>
                 </div>
             </section>

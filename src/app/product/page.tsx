@@ -1,4 +1,4 @@
-'use client'
+
 
 import { FaCircle, FaHeart, FaInstagram, FaFacebookF, FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
