@@ -40,7 +40,7 @@ export default function Header() {
                         <FaHeart/>
                     </div>
                     <div className="flex w-4 h-4 cursor-pointer">
-                       <Link href="/"> <BsCart3/> </Link>
+                       <Link href="/cart"> <BsCart3/> </Link>
                     </div>
                 </div>
             </div>
